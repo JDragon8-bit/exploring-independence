@@ -1,0 +1,158 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Independence</title>
+  
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 40px;
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Style the buttons */
+        .popup-btn {
+            padding: 10px 16px;
+            font-size: 14px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .popup-btn:hover {
+            background-color: #004da3;
+        }
+
+     
+        .selection-popup {
+            position: absolute;
+            display: none;
+            background-color: #222;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transform: translate(-50%, -100%);
+            margin-top: -10px; /* Positions it slightly above the button click */
+            z-index: 1000;
+            max-width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  
+  
+  <div class="buttons">
+     <h1>Modern Day Declaration of Independence</h1>
+ <p><b>Instructions: Click on a sentence or paragraph to learn what it means in modern day terms!</b></p>
+<p>  The Declaration of Independence was a letter sent to the current King of England, King George III. It was written primarily by Thomas Jefferson with help from John Adams, Benjamin Franklin, Roger Sherman and Robert R. Livingston. It was written between June 11 and 28, 1776. Congress approved the final draft on July 4, 1776. The preamble is the introduction to the Declaration. It outlines "inalienable rights" which are rights that people are born with and cannot be taken away. It then lists 27 complaints or grievances that the colonists had with King George. It finally ends by saying that the colonies are free to make their own decisions and are independent.</p>
+   <h3>Preamble:</h3>
+    <button class="popup-btn" data-popup="If a group of people feel oppressed by their government, then they should separate from that government. These are the reasons why we have declared our separation from England.">The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.</button>
+    <button class="popup-btn" data-popup="We believe that every man is born with rights that cannot be taken away, and if they are taken away, they should declare independence to protect these rights.">We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.</button>
+    <button class="popup-btn" data-popup="When we change our government, it should be something we should all agree on. When a government tries to take away our rights, we should overthrow that government.The king of England has abused his power and wants total control of our colonies.">Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.--Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.</button>
+    <h3>Grievances:</h3>
+<button class="popup-btn" data-popup="He doesn't let us make our own laws, which we need to do here.">He has refused his Assent to Laws, the most wholesome and necessary for the public good.</button>
+<button class="popup-btn" data-popup="He has to sign off on all important laws, making it unable for us to pass them, and we suffer as a result.">He has forbidden his Governors to pass Laws of immediate and pressing importance, unless suspended in their operation till his Assent should be obtained; and when so suspended, he has utterly neglected to attend to them.</button>
+<button class="popup-btn" data-popup="He won't pass laws for large groups of people unless they give up their right to self-government, which is a right they've had for a long time.">He has refused to pass other Laws for the accommodation of large districts of people, unless those people would relinquish the right of Representation in the Legislature, a right inestimable to them and formidable to tyrants only.</button>
+<button class="popup-btn" data-popup="He makes our representatives meet in different, odd, places so he can tire them into agreeing with him.">He has called together legislative bodies at places unusual, uncomfortable, and distant from the depository of their public Records, for the sole purpose of fatiguing them into compliance with his measures</button>
+<button class="popup-btn" data-popup="He has taken away our representatives when they complain about the people's rights.">He has dissolved Representative Houses repeatedly, for opposing with manly firmness his invasions on the rights of the people.</button>
+<button class="popup-btn" data-popup="By not allowing self-government, we are vulnerable to corruption from the inside and outside.">He has refused for a long time, after such dissolutions, to cause others to be elected; whereby the Legislative powers, incapable of Annihilation, have returned to the People at large for their exercise; the State remaining in the mean time exposed to all the dangers of invasion from without, and convulsions within.</button>
+<button class="popup-btn" data-popup="He fights to control the population, immigration, and the owenership of land in our colonies.">He has endeavoured to prevent the population of these States; for that purpose obstructing the Laws for Naturalization of Foreigners; refusing to pass others to encourage their migrations hither, and raising the conditions of new Appropriations of Lands.</button>
+<button class="popup-btn" data-popup="He makes practicing law here very difficult, as he wants to be the ultimate and final judge.">He has obstructed the Administration of Justice, by refusing his Assent to Laws for establishing Judiciary powers.</button>
+<button class="popup-btn" data-popup="He has sent over judges that will further his agenda in the courts of law because they have no other choice.">He has made Judges dependent on his Will alone, for the tenure of their offices, and the amount and payment of their salaries.</button>
+<button class="popup-btn" data-popup="He has made new offices and sent many officers to harrass the colonists.">He has erected a multitude of New Offices, and sent hither swarms of Officers to harrass our people, and eat out their substance.</button>
+<button class="popup-btn" data-popup="Even when there wasn't a war going on, he kept an army to watch over us without our permission.">He has kept among us, in times of peace, Standing Armies without the Consent of our legislatures.</button>
+<button class="popup-btn" data-popup="He has made the army so big and powerful that justice cannot be carried out.">He has affected to render the Military independent of and superior to the Civil power.</button>
+<button class="popup-btn" data-popup="He doesn't accept our laws, instead we have to follow all of his.">He has combined with others to subject us to a jurisdiction foreign to our constitution, and unacknowledged by our laws; giving his Assent to their Acts of pretended Legislation:</button>
+<button class="popup-btn" data-popup="For housing his troops within our houses.">For Quartering large bodies of armed troops among us:</button>
+<button class="popup-btn" data-popup="For helping his soldiers avoid punishment by making a fake trial if they murder anybody who lives in the states.">For protecting them, by a mock Trial, from punishment for any Murders which they should commit on the Inhabitants of these States:</button>
+<button class="popup-btn" data-popup="For making us unable to trade with the rest of the world.">For cutting off our Trade with all parts of the world:</button>
+<button class="popup-btn" data-popup="For adding taxes without our permission.">For imposing Taxes on us without our Consent:</button>
+<button class="popup-btn" data-popup="For taking away our right to Trial by Jury.">For depriving us in many cases, of the benefits of Trial by Jury:</button>
+<button class="popup-btn" data-popup="For taking us across the ocean to be sent to trial for pretend crimes.">For transporting us beyond Seas to be tried for pretended offences:</button>
+<button class="popup-btn" data-popup="For he removes our laws and forces his laws onto us, making us an example of what his other colonies should act like.">For abolishing the free System of English Laws in a neighbouring Province, establishing therein an Arbitrary government, and enlarging its Boundaries so as to render it at once an example and fit instrument for introducing the same absolute rule into these Colonies:</button>
+<button class="popup-btn" data-popup="For taking away our forms of government that lets us create important laws.">For taking away our Charters, abolishing our most valuable Laws, and altering fundamentally the Forms of our Governments:</button>
+<button class="popup-btn" data-popup="For suspending our own forms of government and imposing his justice system on us.">For suspending our own Legislatures, and declaring themselves invested with power to legislate for us in all cases whatsoever.</button>
+<button class="popup-btn" data-popup="For disowing our government and wagiung war on us because we wish to be self-governed.">He has abdicated Government here, by declaring us out of his Protection and waging War against us.</button>
+<button class="popup-btn" data-popup="He has over-fished our oceans, burnt up our towns, and ruined the lives of our citizens.">He has plundered our seas, ravaged our Coasts, burnt our towns, and destroyed the lives of our people.</button>
+<button class="popup-btn" data-popup="He is sending over foreign mercenaries to complete his evil deeds, which is unfit of a leader of an empire.">He is at this time transporting large Armies of foreign Mercenaries to compleat the works of death, desolation and tyranny, already begun with circumstances of Cruelty & perfidy scarcely paralleled in the most barbarous ages, and totally unworthy the Head of a civilized nation.</button>
+<button class="popup-btn" data-popup="He has caputured our citizens and forced them to fight against their country.">He has constrained our fellow Citizens taken Captive on the high Seas to bear Arms against their Country, to become the executioners of their friends and Brethren, or to fall themselves by their Hands.</button>
+<button class="popup-btn" data-popup="He has manipulated our people to fight each other, like the Native Americans, who live by total destruction and death regardless of who you are.">He has excited domestic insurrections amongst us, and has endeavoured to bring on the inhabitants of our frontiers, the merciless Indian Savages, whose known rule of warfare, is an undistinguished destruction of all ages, sexes and conditions.</button>
+<h3>Conclusion:</h3>
+<button class="popup-btn" data-popup="Whenever we protest one of these issues, the king just tells us to endure it and not complain. It is time we overthrow this tyrant.">In every stage of these Oppressions We have Petitioned for Redress in the most humble terms: Our repeated Petitions have been answered only by repeated injury. A Prince, whose character is thus marked by every act which may define a Tyrant, is unfit to be the ruler of a free people.</button>
+<button class="popup-btn" data-popup="We have told England that we wish to be governed by ourselves, but they won't listen. So, we must fight for our fundamental rights and anybody who is opposed to the king's policies is our friend and ally.">Nor have We been wanting in attentions to our Brittish brethren. We have warned them from time to time of attempts by their legislature to extend an unwarrantable jurisdiction over us. We have reminded them of the circumstances of our emigration and settlement here. We have appealed to their native justice and magnanimity, and we have conjured them by the ties of our common kindred to disavow these usurpations, which, would inevitably interrupt our connections and correspondence. They too have been deaf to the voice of justice and of consanguinity. We must, therefore, acquiesce in the necessity, which denounces our Separation, and hold them, as we hold the rest of mankind, Enemies in War, in Peace Friends.</button>
+<button class="popup-btn" data-popup="We, the United States of America declare that our colonies are independent from the rule of the king of Great Britain.We have the full power to make alliances, do business, declare war, and make peace. To show we mean what we say, we will hand over our lives, fortunes, and integrity.">We, therefore, the Representatives of the united States of America, in General Congress, Assembled, appealing to the Supreme Judge of the world for the rectitude of our intentions, do, in the Name, and by Authority of the good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right ought to be Free and Independent States; that they are Absolved from all Allegiance to the British Crown, and that all political connection between them and the State of Great Britain, is and ought to be totally dissolved; and that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances, establish Commerce, and to do all other Acts and Things which Independent States may of right do. And for the support of this Declaration, with a firm reliance on the protection of divine Providence, we mutually pledge to each other our Lives, our Fortunes and our sacred Honor.</button>
+<p>&copy; Jiaming Dutton 2026</p>
+</div>
+<style>
+  .buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;              
+    width: 100%;           
+  }
+
+</style>
+    
+    <div id="popupBox" class="selection-popup"></div>
+ <script>
+        const popupBox = document.getElementById('popupBox');
+
+        // Listen for a click anywhere on the page
+        document.addEventListener('click', (event) => {
+           
+            const button = event.target.closest('.popup-btn');
+
+            if (button) {
+               
+                event.stopPropagation(); 
+
+               
+                const customMessage = button.getAttribute('data-popup');
+                
+               
+                popupBox.textContent = customMessage;
+                popupBox.style.left = `${event.pageX}px`;
+                popupBox.style.top = `${event.pageY}px`;
+                popupBox.style.display = 'block';
+            } else {
+              
+                popupBox.style.display = 'none';
+            }
+        });
+    </script>
+  <style>
+        body {
+            background-color: #E8DCB8;
+        }
+    </style>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-a48ed024-7028-4647-a002-ae153e5e67aa" data-elfsight-app-lazy></div>
+
+<style>
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5rem; 
+}
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: #472C1B
+}</style>
+</body>
+</html>
